@@ -8,7 +8,7 @@ const cors = require('cors')
 app.use(express.json())
 app.use(cors())
  
-mongoose.connect('mongodb+srv://woldemst:WeinertW1480.@secondcluster.fawkohp.mongodb.net/mern?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://woldemst:****.@secondcluster.fawkohp.mongodb.net/mern?retryWrites=true&w=majority')
 
 app.get('/getTasks', (req, res) => {
     UserModel.find({}, (err, result) => {
